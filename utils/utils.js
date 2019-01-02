@@ -7,5 +7,11 @@ module.exports.fac = (n) => {
     });
     
     return result;
-}
+};
 
+module.exports.asyncSquare = (x, callback) =>{
+// Asynchronous sqauring function
+setTimeout(()=>{
+    callback(x * x);
+    }, 1000);
+};
